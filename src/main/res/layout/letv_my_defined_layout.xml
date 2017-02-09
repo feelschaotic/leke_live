@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:showIn="@layout/letv_recorder_bottom_float_mobile_layout">
+
+
+    <ImageView
+        android:id="@+id/imgV_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/imgV_postposition_camera"
+        android:src="@drawable/letv_recorder_guess" />
+
+    <ImageView
+        android:id="@+id/imgV_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/imgV_guess"
+        android:src="@drawable/letv_recorder_gift" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="30dp">
+
+        <master.flame.danmaku.ui.widget.DanmakuView
+            android:id="@+id/my_danmaku"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#66000000" />
+    </FrameLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/letv_contronl_player" />
+
+    <include
+        android:id="@+id/seting"
+        layout="@layout/set_dangmu_layout" />
+
+    <include
+        android:id="@+id/guessListLL"
+        layout="@layout/live_all_guessing" />
+    <include
+        android:id="@+id/giftListRL"
+        layout="@layout/live_all_gift" />
+</merge>

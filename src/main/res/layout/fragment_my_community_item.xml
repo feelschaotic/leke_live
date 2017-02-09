@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="160dp"
+    android:layout_height="260dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/shadow"
+    app:clickToClose="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/trash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF3B30"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:src="@drawable/trash" />
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:CircleImageView="http://schemas.android.com/apk/res-auto"
+        android:layout_width="160dp"
+        android:layout_height="260dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.ramo.campuslive.view.CircleImageView2
+                android:id="@+id/community_head"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/head"
+                CircleImageView:border_color="@color/white"
+                CircleImageView:border_width="1dp" />
+
+            <TextView
+                android:id="@+id/community_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:singleLine="true"
+                android:text="11" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/community_cover"
+            android:layout_width="135dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/head" />
+
+        <TextView
+            android:id="@+id/community_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="社团aaaaaaaaa" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/special_xin" />
+
+            <TextView
+                android:id="@+id/community_likeNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="13" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/news_feature"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/cpb_grey">
+
+
+    <ListView
+        android:listSelector="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:divider="@android:color/transparent"
+        android:id="@+id/live_theme_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:scrollbars="none">
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/live_theme_add_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_bg_ring_add_selector"
+        android:padding="20dp"
+        android:src="@drawable/add_grey" />
+</RelativeLayout>

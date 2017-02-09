@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reg_LL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/bgStyle">
+
+    <RelativeLayout style="@style/topbar">
+
+        <ImageView style="@style/topbar_back"
+            android:id="@+id/register_back"/>
+
+        <TextView
+            style="@style/topbar_text"
+            android:text="@string/register_user" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/account"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:background="@drawable/text_shape"
+                    android:hint="用户名"
+                    android:inputType="textEmailAddress|phone"
+                    android:paddingLeft="15dp"
+                    android:textColorHint="@color/register_hint"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="13dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/register_calphone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:background="@drawable/text_shape"
+                    android:ems="10"
+                    android:hint="手机号"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="15dp"
+                    android:textColorHint="@color/register_hint"
+                    android:textSize="15sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="13dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:background="@drawable/text_shape"
+                    android:ems="10"
+                    android:hint="@string/password_text"
+                    android:inputType="textPassword"
+                    android:paddingLeft="15dp"
+                    android:textColorHint="@color/register_hint"
+                    android:textSize="15sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="13dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/password_again"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:background="@drawable/text_shape"
+                    android:hint="@string/password_again_text"
+                    android:inputType="textPassword"
+                    android:paddingLeft="15dp"
+                    android:textColorHint="@color/register_hint"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="13dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/register_hint"
+                    android:text="定位学校："
+                    android:textSize="17sp"/>
+                <include layout="@layout/parent_provet" android:id="@+id/provice_list_dalog"/>
+                <include layout="@layout/school_dialog" android:id="@+id/shcool_list_dalog"/>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2" >
+
+                <Button
+                    android:id="@+id/register_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_shape"
+                    android:text="@string/comfirm_register"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2" >
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/goToLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已有账号 "
+                android:textColor="#F2ECE6"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Or"
+                android:textColor="#F2ECE6"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 第三方登陆?"
+                android:textColor="#F2ECE6"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

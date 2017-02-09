@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bgStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/live_theme_close_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right"
+        android:src="@drawable/abc_ic_clear_mtrl_alpha" />
+
+    <EditText
+        android:id="@+id/live_theme_title"
+        style="@style/whiteTv"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="@null"
+        android:hint="直播主题..."
+        android:textColorHint="@color/register_hint"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <include layout="@layout/invite_host_layout" />
+    <include layout="@layout/invite_share_layout" />
+
+    <Button
+        android:id="@+id/live_theme_create_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/begin_live_btn_bg"
+        android:text="创建"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/cpb_blue" />
+</LinearLayout>

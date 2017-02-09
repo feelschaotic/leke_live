@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1.5"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_personal_center">
+
+    <TextView
+        android:id="@+id/personal_user_name"
+        style="@style/balance_time_line_big_text"
+        android:text="@string/userName" />
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/personal_user_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="7dp"
+        android:layout_below="@id/personal_user_name"
+        android:layout_marginTop="3dp">
+
+        <ImageView
+            android:id="@+id/personal_school_iv"
+            style="@style/iv_32"
+            android:src="@drawable/school" />
+
+        <TextView
+            android:id="@+id/personal_user_school_tv"
+            style="@style/whiteTv"
+            android:text="吉首大学" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/personal_user_level_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="7dp"
+        android:layout_below="@id/personal_user_school"
+        android:layout_marginTop="2dp">
+
+        <ImageView
+            android:id="@+id/personal_level_iv"
+            style="@style/iv_32"
+            android:layout_below="@id/personal_user_school"
+            android:src="@drawable/personal_level1" />
+
+        <TextView
+            android:id="@+id/personal_user_level"
+            style="@style/whiteTv"
+            android:text="@string/userLevel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/personal_user_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_user_school"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/personal_gift_shape">
+
+        <ImageView
+            android:id="@+id/personal_gift_iv"
+            style="@style/iv_32"
+            android:src="@drawable/personal_gift" />
+
+        <TextView
+            android:id="@+id/personal_user_money"
+            style="@style/whiteTv"
+            android:text="收到礼物：12555" />
+    </LinearLayout>
+
+</LinearLayout>

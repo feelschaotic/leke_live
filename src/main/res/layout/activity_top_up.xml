@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bgStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/topbar">
+
+        <ImageView
+            android:id="@+id/register_back"
+            style="@style/topbar_back" />
+
+        <TextView
+            style="@style/topbar_text"
+            android:text="充值" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/balance_time_line_medium_text"
+        android:layout_margin="10dp"
+        android:text="@string/top_up_text" />
+
+    <GridLayout
+        android:id="@+id/top_up_gl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:padding="10dp"
+        android:rowCount="2">
+
+        <TextView
+            style="@style/top_up_tv_selected_style"
+            android:text="@string/top_up_money1" />
+
+        <TextView
+            style="@style/top_up_tv_style"
+            android:text="@string/top_up_money2" />
+
+        <TextView
+            style="@style/top_up_tv_style"
+            android:text="@string/top_up_money3" />
+
+        <TextView
+            style="@style/top_up_tv_style"
+            android:text="@string/top_up_money4" />
+
+        <TextView
+            style="@style/top_up_tv_style"
+            android:text="@string/top_up_money5" />
+
+        <TextView
+            style="@style/top_up_tv_style"
+            android:text="@string/top_up_money6" />
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/balance_time_line_medium_text"
+            android:text="自选:" />
+
+       <EditText
+
+            style="@style/balance_time_line_big_text"
+            android:layout_width="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_shape"
+            android:inputType="number"
+            android:maxWidth="100dp" />
+
+        <TextView
+            style="@style/balance_time_line_medium_text"
+            android:text="金币" />
+    </LinearLayout>
+
+    <Button
+        style="@style/balance_time_line_big_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/btn_shape"
+        android:text="充值" />
+</LinearLayout>

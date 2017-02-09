@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:padding="5dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/no2_num" />
+
+
+    <com.ramo.campuslive.view.CircleImageView
+        android:id="@+id/contribution_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/head" />
+
+    <ImageView
+        android:id="@+id/contribution_no2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contribution_head"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/no2" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contribution_no2"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/contribution_name"
+            android:layout_centerHorizontal="true"
+            style="@style/balance_time_line_big_text"
+            android:text="New Text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/contribution_tv1"
+            style="@style/balance_time_line_small_text"
+            android:layout_below="@id/contribution_name"
+            android:text="赠送" />
+
+        <TextView
+            android:id="@+id/contribution_money"
+            style="@style/balance_time_line_medium_text"
+            android:layout_below="@id/contribution_name"
+            android:layout_toRightOf="@id/contribution_tv1"
+            android:text="1233"
+            android:textColor="@color/cpb_red_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/contribution_tv2"
+            style="@style/balance_time_line_small_text"
+            android:layout_below="@id/contribution_name"
+            android:layout_toRightOf="@id/contribution_money"
+            android:text="个金币" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/placeholder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/class_back"
+        style="@style/topbar_back"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp" />
+
+    <ImageView
+        android:id="@+id/class_share"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/share" />
+
+    <RelativeLayout
+        android:id="@+id/videoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@id/placeholder"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@id/placeholder"
+        android:layout_below="@+id/videoContainer"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <include layout="@layout/classplay_question_top" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_class_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+      <!--  <FrameLayout
+            android:id="@+id/class_question_details_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+-->
+        <LinearLayout
+            android:id="@+id/write_answer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/tttranslucentBlack"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <EditText
+                android:id="@+id/et_answer_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/input_shape"
+                android:hint="输入回复内容"
+                android:textColor="#66000000"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btn_answerto"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/left_nav_menu_send_btn_selector" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/share_layout" />
+</RelativeLayout>

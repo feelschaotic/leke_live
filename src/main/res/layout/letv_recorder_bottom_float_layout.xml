@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/letv_recorder_bottom_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/letv_recorder_people"
+        android:drawablePadding="5dp"
+        android:text=""
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/letv_recorder_bottom_text_size"
+        android:textColor="@color/letv_recorder_text_color"
+        android:visibility="gone"
+         />
+
+    <TextView
+        android:id="@+id/letv_recorder_bomttom_rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="REC"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/letv_recorder_bottom_text_size"
+        android:textColor="@color/letv_recorder_text_color" />
+
+    <ImageView
+        android:id="@+id/letv_recorder_bottom_thumd"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/letv_recorder_bomttom_rec"
+        android:layout_toStartOf="@id/letv_recorder_bomttom_rec"
+        android:src="@drawable/letv_recorder_thumd" />
+
+    <TextView
+        android:id="@+id/letv_recorder_bottom_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/letv_recorder_bottom_thumd"
+        android:layout_toStartOf="@id/letv_recorder_bottom_thumd"
+        android:text="00:01:56"
+        android:textSize="@dimen/letv_recorder_bottom_text_size"
+        android:textColor="@color/letv_recorder_text_color" />
+
+</RelativeLayout>

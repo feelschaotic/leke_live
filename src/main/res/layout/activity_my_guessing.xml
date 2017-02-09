@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bgStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/topbar">
+
+        <ImageView style="@style/topbar_back" />
+
+        <TextView
+            style="@style/topbar_text"
+            android:text="参与的竞猜" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/my_guessing_lv"
+        style="@style/baseListView"
+        android:dividerHeight="10dp"
+        android:padding="5dp">
+
+    </ListView>
+</LinearLayout>

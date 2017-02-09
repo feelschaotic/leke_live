@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/contribution_sort_num"
+        style="@style/whiteTv"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="NO.5" />
+
+    <com.ramo.campuslive.view.CircleImageView
+        android:id="@+id/contribution_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/contribution_sort_num"
+        android:src="@drawable/head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/contribution_head">
+
+        <TextView
+            android:id="@+id/contribution_name"
+            style="@style/balance_time_line_big_text"
+            android:text="New Text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/contribution_tv1"
+            style="@style/balance_time_line_small_text"
+            android:layout_below="@id/contribution_name"
+            android:text="赠送" />
+
+        <TextView
+            android:id="@+id/contribution_money"
+            style="@style/balance_time_line_medium_text"
+            android:layout_below="@id/contribution_name"
+            android:layout_toRightOf="@id/contribution_tv1"
+            android:textStyle="bold"
+            android:text="1233"
+            android:textColor="@color/cpb_red_dark" />
+
+        <TextView
+            android:id="@+id/contribution_tv2"
+            style="@style/balance_time_line_small_text"
+            android:layout_below="@id/contribution_name"
+            android:layout_toRightOf="@id/contribution_money"
+            android:text="个金币" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

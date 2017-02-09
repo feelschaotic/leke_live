@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <View
+        android:id="@+id/balance_line"
+        style="@style/balance_time_line_item"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/balance_line"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/balance_time_line_month"
+            style="@style/balance_time_line_small_text"
+            android:text="10.8" />
+
+        <TextView
+            android:id="@+id/balance_time_line_time"
+            style="@style/balance_time_line_big_text"
+            android:text="10:12:00" />
+
+        <TextView
+            android:id="@+id/balance_time_line_year"
+            style="@style/balance_time_line_small_text"
+            android:text="2013" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/balance_time_line_time_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/balance_time_line_time_point" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/balance_line"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/balance_time_line_balance"
+            style="@style/balance_time_line_big_text"
+            android:text="+100金币" />
+
+        <TextView
+            android:id="@+id/balance_time_line_content"
+            style="@style/balance_time_line_medium_text"
+            android:text="登录赠送" />
+    </LinearLayout>
+
+</RelativeLayout>

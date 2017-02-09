@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        style="@style/gessing_options_rl"
+        android:layout_width="270dp">
+
+        <TextView
+            android:id="@+id/guessing_options_tv"
+            style="@style/gessing_options_tv"
+            android:text="选项1" />
+
+        <EditText
+            android:id="@+id/guessing_options_et"
+            style="@style/gessing_options_et_style"
+            android:layout_toRightOf="@id/guessing_options_tv"
+            android:text="ying" />
+
+
+        <EditText
+            android:id="@+id/guessing_options_et2"
+            style="@style/gessing_options_et_style"
+            android:inputType="numberDecimal"
+            android:layout_toRightOf="@id/guessing_options_et"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/guessing_options_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/guessing_options_et2"
+            android:text="赔率:" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/guessing_del_options"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/delete" />
+</LinearLayout>

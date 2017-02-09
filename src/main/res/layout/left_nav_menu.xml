@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:CircleImageView="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/left_nav_user_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="onClickLeftMenu">
+
+            <com.ramo.campuslive.view.CircleImageView2
+                android:id="@+id/left_nav_head"
+                CircleImageView:border_color="@color/white"
+                CircleImageView:border_width="2dp"
+                style="@style/leftNavHead" />
+
+            <TextView
+                android:id="@+id/left_nav_Name"
+                style="@style/leftNavName" />
+
+            <ImageView
+                android:id="@+id/left_nav_level_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/left_nav_Name"
+                android:layout_below="@+id/left_nav_Name"
+                android:src="@drawable/personal_level1" />
+
+            <TextView
+                android:id="@+id/left_nav_level"
+                style="@style/leftNavLevel"
+                android:layout_alignBottom="@+id/left_nav_level_iv"
+                android:layout_alignEnd="@+id/left_nav_Name" />
+
+        </RelativeLayout>
+
+        <View style="@style/leftNavHrHorizontal" />
+
+        <RelativeLayout
+            android:id="@+id/left_nav_my_attention"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickLeftMenu">
+
+            <ImageView
+                android:id="@+id/left_nav_my_attention_iv1"
+                style="@style/leftNavMenuImage"
+                android:src="@drawable/left_menu_like_selector" />
+
+            <TextView
+                style="@style/leftNavMenuText"
+                android:layout_toRightOf="@id/left_nav_my_attention_iv1"
+                android:text="我的订阅" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/left_nav_my_community"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickLeftMenu">
+
+            <ImageView
+                android:id="@+id/left_nav_my_community_iv1"
+                style="@style/leftNavMenuImage"
+                android:src="@drawable/left_menu_ic_users_selector" />
+
+            <TextView
+                style="@style/leftNavMenuText"
+                android:layout_toRightOf="@id/left_nav_my_community_iv1"
+                android:text="我的社团" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/left_nav_menu_my_guessing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickLeftMenu">
+
+            <ImageView
+                android:id="@+id/left_iv7"
+                style="@style/leftNavMenuImage"
+                android:src="@drawable/guess_bg" />
+
+            <TextView
+                android:id="@+id/left_tv7"
+                style="@style/leftNavMenuText"
+                android:layout_toRightOf="@id/left_iv7"
+                android:text="我的竞猜" />
+        </RelativeLayout>
+
+        <View style="@style/leftNavHrHorizontal" />
+
+        <RelativeLayout
+            android:id="@+id/left_nav_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickLeftMenu">
+
+            <ImageView
+                android:id="@+id/left_nav_message_iv"
+                style="@style/leftNavMenuImage"
+                android:src="@android:drawable/sym_action_email" />
+
+            <TextView
+                style="@style/leftNavMenuText"
+                android:layout_toRightOf="@id/left_nav_message_iv"
+                android:text="消息" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/left_nav_payments_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickLeftMenu">
+
+            <ImageView
+                android:id="@+id/left_iv6"
+                style="@style/leftNavMenuImage"
+                android:src="@drawable/left_menu_ic_money_selector" />
+
+            <TextView
+                android:id="@+id/left_tv6"
+                style="@style/leftNavMenuText"
+                android:layout_toRightOf="@id/left_iv6"
+                android:text="财富" />
+        </RelativeLayout>
+
+        <View style="@style/leftNavHrHorizontal" />
+
+        <RelativeLayout
+            android:id="@+id/left_nav_menu_loveWall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickLeftMenu">
+
+            <ImageView
+                android:id="@+id/iv8"
+                style="@style/leftNavMenuImage"
+                android:src="@drawable/love_wall_selector" />
+
+            <TextView
+                style="@style/leftNavMenuText"
+                android:layout_toRightOf="@id/iv8"
+                android:text="表白墙" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/left_nav_menu_school_360"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickLeftMenu">
+
+            <ImageView
+                android:id="@+id/iv10"
+                style="@style/leftNavMenuImage"
+                android:src="@drawable/school_360_selector" />
+
+            <TextView
+                style="@style/leftNavMenuText"
+                android:layout_toRightOf="@id/iv10"
+                android:text="全景校园" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/left_nav_menu_mapLive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickLeftMenu">
+
+            <ImageView
+                android:id="@+id/iv4"
+                style="@style/leftNavMenuImage"
+                android:src="@drawable/bottom_nav_map_seleceor" />
+
+            <TextView
+                android:id="@+id/tv4"
+                style="@style/leftNavMenuText"
+                android:layout_toRightOf="@id/iv4"
+                android:text="地图" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/left_nav_apply_host"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickLeftMenu">
+
+            <ImageView
+                android:id="@+id/iv6"
+                style="@style/leftNavMenuImage"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/left_menu_ic_user_selector" />
+
+            <TextView
+                android:id="@+id/tv6"
+                style="@style/leftNavMenuTextSet"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv6"
+                android:text="申请当主播" />
+
+        </RelativeLayout>
+        <View style="@style/leftNavHrHorizontal" />
+        <RelativeLayout
+            android:id="@+id/left_nav_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickLeftMenu">
+
+            <ImageView
+                android:id="@+id/iv7"
+                style="@style/leftNavMenuImage"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/left_nav_ic_set" />
+
+            <TextView
+                android:id="@+id/tv7"
+                style="@style/leftNavMenuTextSet"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/iv7"
+                android:text="设置" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

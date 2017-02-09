@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.juss.mediaplay.ThemeBasketballActivity">
+
+
+    <ImageView
+        android:id="@+id/top_img"
+        android:layout_marginTop="-10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:src="@drawable/basketball_bg"
+      />
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="-140dp"
+            android:layout_marginRight="15dp"
+            android:padding="10dp"
+            android:background="@drawable/text_shape_radius"
+            android:text="为了活跃阮氏员工的文化生活,注重培育团队精神,提升企业凝聚力,充分展示阮氏人自信、阳光、充满朝气的精神风貌,增进各兄弟单位间的..."/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="比赛排行榜"
+            android:textColor="@color/white"
+            android:background="@drawable/text_shape"
+            android:layout_gravity="center"/>
+
+
+        <ListView
+            android:id="@+id/lv_theme_bask"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+
+            ></ListView>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+def AAVersion = '3.3.1'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    packagingOptions{
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+
+    }
+    /*sourceSets.main{
+        jniLibs.srcDirs = ['libs']
+    }*/
+
+}
+configurations {
+    apt
+}
+dependencies {
+    compile project(':euclid_lib')
+    compile project(':circular_progress_btn_lib')
+    /*compile project(':barrage')*/
+    //配置Android annotations
+    apt "org.androidannotations:androidannotations:$AAVersion"
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
+    compile files('libs/gson-2.1.jar')
+    compile files('libs/Msc.jar')
+    compile files('libs/Sunflower.jar')
+    compile 'com.github.ctiao:dfm:0.4.2'
+    compile files('libs/httpmime-4.3.4.jar')
+    compile files('libs/httpcore-4.3.2.jar')
+    compile files('libs/juhe_sdk_v_2_7.jar')
+    compile files('libs/lecloud_Android_mobile_live_push_SDK_v1.1.0_stable.jar')
+    compile files('libs/VideoTracker.jar')
+    compile files('libs/playersdk_2016_04_25_17_v4.0.1_release.jar')
+    /*观看直播*/
+    /*compile files('libs/org.apache.http.legacy.jar')*/
+    compile files('libs/letvadlib_lecloud.jar')
+    compile files('libs/LePanoVideo.jar')
+    compile files('libs/cmf-sdk-1.0.17.jar')
+    compile files('libs/avdsmart_sdk.jar')
+    compile files('libs/AdModule.jar')
+    /*    compile files('libs/ShareSDK-Core-2.7.3.jar')
+        compile files('libs/ShareSDK-SinaWeibo-2.7.3.jar')
+        compile files('libs/ShareSDK-QQ-2.7.3.jar')
+        compile files('libs/MobTools-2016.0623.1641.jar')
+        compile files('libs/ShareSDK-QZone-2.7.3.jar')
+        compile files('libs/MobCommons-2016.0623.1641.jar')*/
+}
+
+
+
+
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
+apt {
+    arguments {
+        androidManifestFile variant.outputs[0].processResources.manifestFile
+        resourcePackageName "com.ramo.campuslive"
+    }
+}

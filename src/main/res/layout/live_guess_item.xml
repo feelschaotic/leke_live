@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/linearlayout_shape"
+    android:orientation="vertical"
+    android:paddingBottom="7dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="85dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.81"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/guess_title"
+                style="@style/balance_time_line_medium_text"
+                android:maxLines="2"
+                android:text="TextViewsssssssssssssssssssssssssssssssssssssss1111111111222" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/guess_joinNum"
+                    style="@style/balance_time_line_medium_text"
+                    android:text="2" />
+
+                <TextView
+                    style="@style/balance_time_line_small_text"
+                    android:text="人下注" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/time" />
+
+                <TextView
+                    android:id="@+id/guess_time"
+                    style="@style/balance_time_line_small_text"
+                    android:text="Small Text" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/coarse_hr_hor"
+        android:layout_margin="0dp"></View>
+
+    <TextView
+        android:id="@+id/guess_state"
+        style="@style/balance_time_line_small_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="竞猜中" />
+</LinearLayout>

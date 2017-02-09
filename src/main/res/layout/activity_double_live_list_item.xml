@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/translucentBlack"
+    android:layout_height="310dp"
+    app:clickToClose="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/main_addInTheme_iv"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/add_in_theme_bg_tran"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:src="@drawable/add_in_theme" />
+
+        <ImageView
+            android:id="@+id/main_like_iv"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/like_bg_tran"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:src="@drawable/star" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/translucentBlack"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/double_live_title"
+            style="@style/balance_time_line_big_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="该不该实行手机号实名制？" />
+
+        <View
+            android:id="@+id/double_live_hr"
+            style="@style/coarse_hr_hor"
+            android:layout_below="@id/double_live_title"
+            android:layout_margin="8dp" />
+
+
+        <TextView
+            android:id="@+id/double_live_view1"
+            style="@style/double_live_medium_text1"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/double_live_hr"
+            android:layout_marginLeft="7dp"
+            android:text="不应该" />
+
+        <TextView
+            android:id="@+id/double_live_view2"
+            style="@style/double_live_medium_text2"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/double_live_hr"
+            android:layout_marginRight="7dp"
+            android:text="应该" />
+
+        <LinearLayout
+            android:id="@+id/double_live_list_ll1"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_below="@id/double_live_view2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/head" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/head2" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:id="@+id/double_live_list_user_rl"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@id/double_live_list_ll1"
+            android:layout_marginTop="-15dp">
+
+            <com.ramo.campuslive.view.CircleImageView
+                android:id="@+id/double_live_userHead1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/head" />
+
+            <TextView
+                android:id="@+id/double_live_userName1"
+                style="@style/double_live_medium_text1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/double_live_userHead1"
+                android:text="ramo" />
+
+            <com.ramo.campuslive.view.CircleImageView
+                android:id="@+id/double_live_userHead2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/head2" />
+
+            <TextView
+                android:id="@+id/double_live_userName2"
+                style="@style/double_live_medium_text2"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/double_live_userHead2"
+                android:text="乱" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/pk2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/double_live_list_user_rl"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                style="@style/double_live_medium_text1"
+                android:text="60%" />
+
+            <ProgressBar
+                android:id="@+id/double_live_list_item_progressBar"
+                style="@style/double_live_progressBar3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:progress="60"
+                android:secondaryProgress="100" />
+
+            <TextView
+                style="@style/double_live_medium_text2"
+                android:text="40%" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>

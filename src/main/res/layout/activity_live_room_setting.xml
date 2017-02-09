@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        style="@style/bgStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/topbar">
+
+            <ImageView style="@style/topbar_back" />
+
+            <TextView
+                style="@style/topbar_text"
+                android:text="直播间设置" />
+
+            <TextView
+                android:id="@+id/begin_live_btn"
+                style="@style/balance_time_line_medium_text"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="完成" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/live_title"
+                style="@style/whiteTv"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:text="直播标题..."
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+            <TextView
+                style="@style/whiteTv"
+                android:layout_marginTop="20dp"
+                android:text="权限设置：" />
+
+            <include layout="@layout/parent_live_permissions" />
+
+            <include layout="@layout/parent_live_tag" />
+
+            <TextView
+                android:id="@+id/live_permissions_open_tv"
+                style="@style/whiteTv"
+                android:text="封面照" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/upload_pictures_plus" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

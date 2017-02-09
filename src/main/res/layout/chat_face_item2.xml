@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/chat_face_item_gl" >
+
+    <ImageView
+        android:id="@+id/moji_text_9_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="faceClick"
+        android:src="@drawable/emoji_text_9" />
+
+    <ImageView
+        android:id="@+id/moji_text_10_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="faceClick"
+        android:src="@drawable/emoji_text_10" />
+
+    <ImageView
+        android:id="@+id/moji_text_11_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="faceClick"
+        android:src="@drawable/emoji_text_11" />
+
+    <ImageView
+        android:id="@+id/moji_text_12_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="faceClick"
+        android:src="@drawable/emoji_text_12" />
+
+    <ImageView
+        android:id="@+id/moji_text_13_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="faceClick"
+        android:src="@drawable/emoji_text_13" />
+
+    <ImageView
+        android:id="@+id/moji_text_14_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="faceClick"
+        android:src="@drawable/emoji_text_14" />
+
+    <ImageView
+        android:id="@+id/moji_text_15_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="faceClick"
+        android:src="@drawable/emoji_text_15" />
+
+    <ImageView
+        android:id="@+id/moji_text_16_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="faceClick"
+        android:src="@drawable/emoji_text_16" />
+
+    <ImageView
+        android:id="@+id/moji_text_delete_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="faceClick"
+        android:src="@drawable/emoji_text_delete" />
+
+</GridLayout>

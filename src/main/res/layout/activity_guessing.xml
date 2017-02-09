@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bgStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/guessing_half_tran_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/half_translucentBlack"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout style="@style/topbar">
+
+                <ImageView style="@style/topbar_back" />
+
+                <TextView
+                    style="@style/topbar_text"
+                    android:text="竞猜" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/whiteTv"
+                android:layout_margin="10dp"
+                android:text="@string/guessing_title"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:paddingLeft="5dp"
+                android:id="@+id/guessing_title_et"
+                style="@style/gessing_options_rl" />
+
+            <TextView
+                style="@style/whiteTv"
+                android:layout_margin="10dp"
+                android:text="设置本轮竞猜选项"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:id="@+id/guessing_options_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/activity_guessing_options" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/guessing_add_options_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/add" />
+
+            <RelativeLayout style="@style/gessing_options_rl">
+
+                <TextView
+                    android:id="@+id/guessing_bet_tv1"
+                    style="@style/gessing_options_tv"
+                    android:text="金币上限" />
+
+                <EditText
+                    android:id="@+id/guessing_bet_et1"
+                    style="@style/gessing_options_et_style"
+                    android:layout_toRightOf="@id/guessing_bet_tv1"
+                    android:text="1000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/gessing_options_rl"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/guessing_time_tv1"
+                    style="@style/gessing_options_tv"
+                    android:text="封盘时间" />
+
+                <EditText
+                    android:id="@+id/guessing_time_et1"
+                    style="@style/gessing_options_et_style"
+                    android:layout_toRightOf="@id/guessing_time_tv1"
+                    android:text="1000" />
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/guessing_agree_deal_checkBox"
+                style="@style/whiteTv"
+                android:text="已同意《竞猜协议》" />
+
+            <Button
+                android:id="@+id/guessing_submit_btn"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/guessing_option_shape"
+                android:text="发起竞猜"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

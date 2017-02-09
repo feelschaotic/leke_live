@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/bottom_menu_bg"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/main_bottom_recommend"
+        style="@style/bottom_menu_ll_style">
+
+        <ImageView
+            style="@style/main_bottom_iv"
+            android:src="@drawable/bottom_nav_recommend_selected" />
+
+        <TextView
+            style="@style/bottom_menu_tv"
+            android:text="推荐" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_bottom_location"
+        style="@style/bottom_menu_ll_style">
+
+        <ImageView
+            style="@style/main_bottom_iv"
+            android:src="@drawable/bottom_nav_local_selected" />
+
+        <TextView
+            style="@style/bottom_menu_tv"
+            android:text="本地" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/main_bottom_hot"
+        style="@style/bottom_menu_ll_style">
+
+        <ImageView
+            style="@style/main_bottom_iv"
+            android:src="@drawable/bottom_nav_hot_selected" />
+
+        <TextView
+            style="@style/bottom_menu_tv"
+            android:text="热门" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_bottom_classify"
+        style="@style/bottom_menu_ll_style">
+
+        <ImageView
+            style="@style/main_bottom_iv"
+            android:src="@drawable/bottom_nav_classify_seleceor" />
+
+        <TextView
+            style="@style/bottom_menu_tv"
+            android:text="分类" />
+    </LinearLayout>
+
+</LinearLayout>

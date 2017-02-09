@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:id="@+id/live_theam_list_rl"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="-200dp"
+    android:background="@drawable/linearlayout_shape_black"
+    android:orientation="vertical"
+    android:paddingBottom="40dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/live_theme_list_closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/download_delete_selector" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/live_theme_list_closeBtn"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/theme_live_list"
+            style="@style/baseListView"></ListView>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/beginPIP"
+        android:layout_marginTop="10dp"
+        style="@style/whiteTv"
+        android:layout_toLeftOf="@id/imgV_play_and_pause"
+        android:background="@drawable/letv_recorder_rate_button"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="开启画中画" />
+</RelativeLayout>

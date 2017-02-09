@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/bgStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ttranslucentBlack"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:gravity="bottom">
+
+                <ImageView
+                    android:id="@+id/personal_room_setting"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/room_setting" />
+
+                <ImageView
+                    android:id="@+id/personal_send_letter_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/personal_letter" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.ramo.campuslive.view.CircleImageView2
+                    android:id="@+id/personal_user_head"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/head"
+                    app:border_color="@color/white"
+                    app:border_width="2dp" />
+            </LinearLayout>
+
+            <include layout="@layout/activity_personal_center_user_info_name_and_level" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:gravity="bottom|right"
+                android:orientation="vertical">
+
+                <com.dd.CircularProgressButton
+                    android:id="@+id/personal_attention_btn"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="13dp"
+                    android:padding="0dp"
+                    android:textColor="@color/cpb_white"
+                    app:cpb_cornerRadius="30dp"
+                    app:cpb_textComplete="已关注"
+                    app:cpb_textError="失败"
+                    app:cpb_textIdle="关注" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/coarse_hr_hor"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"></View>
+
+    </LinearLayout>
+
+    <com.ramo.campuslive.view.ViewPagerIndicator
+        android:id="@+id/ViewPagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/translucentBlack" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ViewPagerIndicator"
+        android:background="@android:color/white">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/letv_recorder_left_arraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/letv_recorder_left_arraw_margin"
+        android:src="@drawable/letv_recorder_arrow" />
+
+    <TextView
+        android:id="@+id/letv_recorder_top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/letv_recorder_left_arraw"
+        android:layout_toRightOf="@id/letv_recorder_left_arraw"
+        android:textColor="@color/letv_recorder_text_color"
+        android:textSize="@dimen/letv_recorder_top_title_size" />
+
+    <ImageView
+        android:id="@+id/letv_recorder_top_change_cam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/letv_recorder_change_cam_margin"
+        android:src="@drawable/letv_recorder_change_white" />
+
+    <ImageView
+        android:id="@+id/letv_recorder_top_mic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/letv_recorder_change_cam_margin"
+        android:layout_toLeftOf="@id/letv_recorder_top_change_cam"
+        android:layout_toStartOf="@id/letv_recorder_top_change_cam"
+        android:src="@drawable/letv_recorder_mic_blue" />
+
+    <ImageView
+        android:id="@+id/letv_recorder_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/letv_recorder_change_cam_margin"
+        android:layout_toLeftOf="@id/letv_recorder_top_mic"
+        android:layout_toStartOf="@id/letv_recorder_top_mic"
+        android:src="@drawable/letv_recorder_flash_white" />
+
+</RelativeLayout>

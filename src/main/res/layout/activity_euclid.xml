@@ -1,0 +1,157 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/toolbar_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_toolbar"
+            android:background="@color/orange">
+
+            <ImageView
+                android:id="@+id/main_top_left_menu"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/main_top_left_menu_selector" />
+
+            <TextView
+                android:id="@+id/main_topbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-bold"
+                android:text="首页"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_toolbar_title" />
+
+            <ImageView
+                android:id="@+id/main_top_left_begin_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/begin_live_selector"
+                android:src="@null" />
+
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_list"
+            android:background="@color/gray"
+            android:divider="@drawable/list_divider"
+            tools:listitem="@layout/list_item" />
+
+        <RelativeLayout
+            android:id="@+id/toolbar_profile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_toolbar"
+            android:background="@color/gray"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/toolbar_profile_back"
+                android:layout_width="@dimen/height_toolbar"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:padding="12dp"
+                android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" />
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="33dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_black_oval">
+
+                <TextView
+                    style="@style/TextViewProfileToolbarTitle"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_orange_oval"
+                    android:text="@string/toolbar_bio"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    style="@style/TextViewProfileToolbarTitle"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/toolbar_details"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/wrapper_profile_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/height_profile_picture_with_toolbar"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/text_view_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/gray"
+                android:textSize="32sp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/text_view_profile_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp"
+                    tools:text="@string/lorem_ipsum_long" />
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/button_profile"
+            layout="@layout/button_round_msg"
+            android:layout_width="@dimen/size_button_message"
+            android:layout_height="@dimen/size_button_message"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="@dimen/margin_top_button_message"
+            android:visibility="invisible" />
+
+        <include layout="@layout/bottom_menu_layout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/navdrawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/left_menu_bg">
+
+        <include layout="@layout/left_nav_menu" />
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/gift_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/gift_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/gift_img"
+        android:singleLine="true"
+        android:maxWidth="250dp"
+        android:text="名"
+        android:textColor="#696969"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/gift_prices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gift_name"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/gift_img"
+        android:text="200"
+        android:textColor="#666666" />
+
+    <ImageView
+        android:id="@+id/send_file_delete_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/download_delete_btn" />
+</RelativeLayout>

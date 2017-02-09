@@ -1,0 +1,222 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bgStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/topbar"
+        android:background="@null">
+
+        <ImageView style="@style/topbar_back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-30dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5">
+
+            <com.ramo.campuslive.view.CircleImageView
+                android:id="@+id/edit_head"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/head" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/edit_head"
+                android:layout_marginLeft="-30dp"
+                android:layout_toEndOf="@+id/edit_head"
+                android:src="@drawable/camera" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:background="@drawable/bg_corners"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/edit_tv_style"
+                        android:text="@string/edit_nickname" />
+
+                    <EditText
+                        android:id="@+id/edit_nickname"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:paddingLeft="15dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+
+                <View style="@style/coarse_hr_hor" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/edit_tv_style"
+                        android:text="登录密码" />
+
+                    <EditText
+                        android:id="@+id/edit_account"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:paddingLeft="15dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <View style="@style/coarse_hr_hor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/edit_tv_style"
+                        android:text="@string/edit_phone" />
+
+                    <EditText
+                        android:id="@+id/edit_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:background="@null"
+                        android:paddingLeft="15dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <View style="@style/coarse_hr_hor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/edit_tv_style"
+                        android:gravity="right"
+                        android:text="@string/edit_sex" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/edit_sex_femal"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/choice_sex_femal" />
+
+                        <ImageView
+                            android:id="@+id/edit_sex_male"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/choice_sex_un_male" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/coarse_hr_hor" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/edit_tv_style"
+                        android:text="@string/edit_school" />
+
+                    <TextView
+                        android:id="@+id/edit_school"
+                        style="@style/edit_tv_style"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/edit_school" />
+                </LinearLayout>
+
+                <View style="@style/coarse_hr_hor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/edit_tv_style"
+                        android:text="@string/edit_authentication" />
+
+                    <TextView
+                        style="@style/edit_tv_style"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:gravity="left|center_vertical"
+                        android:text="审核中" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="150dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_shape"
+                android:textColor="@android:color/white"
+                android:text="@string/edit_save" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

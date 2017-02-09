@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cpb_grey">
+
+    <RelativeLayout
+        android:id="@+id/charity_details_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shadow">
+
+        <ImageView
+            android:id="@+id/charity_cover"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/charity1"
+            android:scaleType="fitXY"
+            android:src="@color/translucentBlack" />
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play_white"/>
+
+        <TextView
+            android:id="@+id/charity_schoolName"
+            style="@style/main_whiteTv_normal_small"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/school_shape_orange"
+            android:drawableLeft="@drawable/school_white"
+            android:padding="3dp"
+            android:text=" 中山大学" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/charity_cover"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:padding="5dp">
+
+            <LinearLayout style="@style/charity_list_item_ll">
+
+                <TextView
+                    style="@style/balance_time_line_small_text_black"
+                    android:text="关注" />
+
+                <TextView
+                    android:id="@+id/charity_attentionNum"
+                    style="@style/balance_time_line_medium_text_orange"
+                    android:text="11" />
+            </LinearLayout>
+
+            <View style="@style/leftNavHrVertical" />
+
+            <LinearLayout style="@style/charity_list_item_ll">
+
+                <TextView
+                    style="@style/balance_time_line_small_text_black"
+                    android:text="分享" />
+
+                <TextView
+                    android:id="@+id/charity_shareNum"
+                    style="@style/balance_time_line_medium_text_orange"
+                    android:text="13" />
+            </LinearLayout>
+
+            <View style="@style/leftNavHrVertical" />
+
+            <LinearLayout style="@style/charity_list_item_ll">
+
+                <TextView
+                    style="@style/balance_time_line_small_text_black"
+                    android:text="社团" />
+
+                <TextView
+                    android:id="@+id/charity_communityName"
+                    style="@style/balance_time_line_medium_text_orange"
+                    android:text="圆梦联盟" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/charity_details_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charity_details_top"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/people_orange" />
+
+            <TextView
+                style="@style/balance_time_line_medium_text_grey"
+                android:layout_marginLeft="10dp"
+                android:text="杨同学" />
+        </LinearLayout>
+
+        <View
+            style="@style/coarse_hr_hor"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/cpb_grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone_orange" />
+
+            <TextView
+                style="@style/balance_time_line_medium_text_grey"
+                android:layout_marginLeft="10dp"
+                android:text="135********12" />
+        </LinearLayout>
+
+        <View
+            style="@style/coarse_hr_hor"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location_orange" />
+
+            <TextView
+                style="@style/balance_time_line_medium_text_grey"
+                android:layout_marginLeft="10dp"
+                android:text="XX省XX市XX路中南大学XX校区协会" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charity_details_address"
+        android:background="@android:color/white"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/charity_details_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/attention_orange" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_shape_orange"
+                android:gravity="center"
+                android:text="我要捐赠"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share_orange" />
+
+    </LinearLayout>
+</RelativeLayout>

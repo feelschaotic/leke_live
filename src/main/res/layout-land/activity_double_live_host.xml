@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/placeholder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@id/placeholder"
+        android:layout_weight="1" />
+
+    <include
+        android:id="@+id/view2"
+        layout="@layout/activity_double_live_base"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/placeholder"
+        android:layout_alignParentRight="true"
+        android:layout_weight="1" />
+
+    <include
+        android:id="@+id/double_live_top_layout"
+        layout="@layout/activity_double_live_top_layout" />
+
+    <include layout="@layout/activity_double_live_bottom_layout" />
+
+    <TextView
+        style="@style/balance_time_line_text"
+        android:layout_below="@id/double_live_top_layout"
+        android:layout_centerHorizontal="true"
+        android:text="00:50"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/double_live_close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/abc_ic_clear_mtrl_alpha" />
+</RelativeLayout>

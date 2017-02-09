@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/control_player"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/sb_video_seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="10dp"
+            android:visibility="gone"
+            android:minHeight="10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:progress="20"
+            android:thumb="@drawable/progress_thumb"
+            />
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="#7e000000"
+            >
+            <!--android:background="@drawable/progress_secondaryprogress"-->
+
+            <Button
+                android:id="@+id/btn_playorpas"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:background="@drawable/play_bg"/>
+
+            <Button
+                android:id="@+id/btn_swich"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:background="@drawable/ic_widget_search_voice"/>
+            <EditText
+                android:id="@+id/dan_text"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:background="#ffffff"
+                android:hint="请输入弹幕内容"
+                android:imeOptions="flagNoExtractUi"
+                android:textSize="12dp"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/add_dang"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/left_nav_menu_send_btn_pressed"
+                />
+            <!--
+             android:text="发送"
+                android:textSize="16dp"
+                android:textColor="@color/white"android:background="#6e000000"-->
+
+            <Button
+                android:id="@+id/btn_dang"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+
+                android:background="@drawable/dang_off"
+                />
+            <Button
+                android:id="@+id/btn_seter"
+                android:layout_marginRight="10dp"
+                android:layout_width="65dp"
+                android:layout_height="65dip"
+                android:background="@drawable/myyouku_setting"/>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>

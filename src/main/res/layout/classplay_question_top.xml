@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#000000"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/class_question_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="提问"
+            android:textSize="16sp"
+            android:textColor="#99ffffff"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/class_homework_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="课堂习题"
+        android:textSize="16sp"
+        android:textColor="#88ffffff"/>
+        </LinearLayout>
+
+</LinearLayout>

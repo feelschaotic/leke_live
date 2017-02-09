@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bgStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/gift_shop_topbar"
+        style="@style/topbar">
+
+        <ImageView
+            android:id="@+id/register_back"
+            style="@style/topbar_back" />
+
+        <TextView
+            style="@style/topbar_text"
+            android:text="礼物商城" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gift_sort_rl"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/gift_shop_topbar"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/gift_sortBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rank_sortbtn_bg"
+            android:drawableLeft="@drawable/rank_btn_normal" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gift_gifts_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gift_sort_rl" />
+
+    <LinearLayout
+        android:id="@+id/gift_shop_shopping_cart_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-50dp"
+        android:background="@color/tttranslucentWhite"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/gift_shop_selected_gift_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/buy_gift_shopping_cart_tv_shape"
+            android:gravity="center"
+            android:text="已选 （3）"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#6CC5FD" />
+
+        <TextView
+            android:id="@+id/gift_shop_buy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/buy_gift_shopping_cart_tv_shape2"
+            android:gravity="center"
+            android:text="购买"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/anim_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="45dp"
+    android:layout_marginBottom="5dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/linearlayout_shape"
+    android:padding="5dp"
+    tools:showIn="@layout/activity_double_live">
+
+
+    <TextView
+        android:id="@+id/double_live_agree1"
+        style="@style/double_live_small_text1"
+        android:layout_alignParentLeft="true"
+        android:text="2赞" />
+
+    <TextView
+        android:id="@+id/double_live_view1"
+        style="@style/double_live_medium_text1"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/double_live_agree1"
+        android:text="应该" />
+
+    <TextView
+        android:id="@+id/double_live_agree2"
+        style="@style/double_live_small_text2"
+        android:layout_alignParentRight="true"
+        android:text="9赞" />
+
+    <TextView
+        android:id="@+id/double_live_view2"
+        style="@style/double_live_medium_text2"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/double_live_agree2"
+        android:text="不应该" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="@style/double_live_progressBar3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:progress="11"
+        android:secondaryProgress="100" />
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/select_gift_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/head" />
+
+    <ImageView
+        android:id="@+id/select_gift_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-12dp"
+        android:layout_toRightOf="@id/select_gift_img"
+        android:src="@drawable/checkbox_on_normal"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/select_gift_name"
+        style="@style/whiteTv"
+        android:layout_below="@+id/select_gift_img"
+        android:layout_centerHorizontal="true"
+        android:text="价格" />
+
+    <TextView
+        android:id="@+id/select_gift_price"
+        style="@style/whiteTv"
+        android:layout_below="@+id/select_gift_name"
+        android:layout_centerHorizontal="true"
+        android:text="100" />
+</RelativeLayout>

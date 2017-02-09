@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bgStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/topbar">
+        <ImageView style="@style/topbar_back" />
+        <TextView
+            style="@style/topbar_text"
+            android:text="@string/apply_host" />
+        <TextView
+            android:id="@+id/tv_apply_host"
+            style="@style/whiteTv"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/apply_submit" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <EditText
+                android:id="@+id/realName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_shape"
+                android:hint="@string/apply_input_real_name"
+                android:textColorHint="@color/register_hint"
+                android:textColor="@color/tttranslucentWhite"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/idCard"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_shape"
+                android:hint="@string/apply_input_id_card"
+                android:textColorHint="@color/register_hint"
+                android:textColor="@color/tttranslucentWhite"
+                android:textSize="15sp"></EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apply_id_card"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/apply_host_upload_idcard_iv"
+                    style="@style/apply_host_upload_img"
+                    android:src="@drawable/upload_pictures_plus" />
+                <!--<ImageView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/apply_host_upload_idcard_iv2"
+                    style="@style/apply_host_upload_img"
+                    android:src="@drawable/upload_pictures_plus" />-->
+
+                <TextView
+                    style="@style/apply_host_hint_text"
+                    android:text="@string/apply_id_card_hint" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apply_professional_certificates"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/apply_host_upload_professional_certificates_iv"
+                    style="@style/apply_host_upload_img"
+                    android:src="@drawable/upload_pictures_plus" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apply_host_cover"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/apply_host_upload_cover_iv"
+                    style="@style/apply_host_upload_img"
+                    android:src="@drawable/upload_pictures_plus" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginBottom="20dp"
+                style="@style/apply_host_hint_text"
+                android:text="@string/apply_hint" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

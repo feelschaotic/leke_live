@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">乐客</string>
+    <string name="lorem_ipsum_long">测试long文字段落</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+    <string name="register_user">注册</string>
+    <string name="register_weibo">用微博账户注册</string>
+    <string name="register_qq">用QQ号注册</string>
+    <string name="account">注册账号:</string>
+    <string name="email_number">手机号</string>
+    <string name="password">设置密码:</string>
+    <string name="password_text">请输入密码</string>
+    <string name="password_again">确认密码:</string>
+    <string name="password_again_text">请输入确认密码</string>
+    <string name="comfirm_register">确认注册</string>
+
+    <string name="edit_nickname">昵称：</string>
+    <string name="loading_text">--</string>
+    <string name="edit_sex">性别：</string>
+    <string name="edit_sex_man">男</string>
+    <string name="edit_sex_woman">女</string>
+    <string name="edit_save">保存</string>
+    <string name="edit_account">账号：</string>
+    <string name="edit_school">学校：</string>
+    <string name="edit_authentication">认证：</string>
+    <string name="edit_phone">手机号：</string>
+
+    <string name="userLevel">普通用户</string>
+    <string name="userName">江湖感觉乱</string>
+
+
+    <string name="apply_host">申请主播</string>
+    <string name="apply_input_real_name">真实姓名</string>
+    <string name="apply_input_id_card">输入二代身份证号码</string>
+    <string name="apply_id_card">身份证</string>
+    <string name="apply_hint">注：以上信息仅用于对主播进行实名认证和学生身份认证，本平台不会向第三方泄露主播身份信息或用于其他用途</string>
+    <string name="apply_submit">提交申请</string>
+    <string name="apply_id_card_hint">照片必须为含本人持有相关证件的正面清晰照片，保证证件文字清晰，本人影像清晰</string>
+    <string name="apply_professional_certificates">学生证/教师证</string>
+    <string name="apply_host_cover">直播封面照</string>
+    <string name="balance_have_money">拥有金币:</string>
+    <string name="top_up_text">请选择充值金额：</string>
+    <string name="top_up_money1">10金币\n  1元</string>
+    <string name="top_up_money2">50金币\n  5元</string>
+    <string name="top_up_money3">100金币\n  10元</string>
+    <string name="top_up_money4">500金币\n  48元</string>
+    <string name="top_up_money5">1000金币\n  95元</string>
+    <string name="top_up_money6">2000金币\n  190元</string>
+    <string name="guessing_title">设置竞猜标题</string>
+    <string name="title_activity_class_play">ClassPlay</string>
+    <string name="title_activity_media_list">MediaList</string>
+    <string name="title_activity_vitam_video_play">VitamVideoPlay</string>
+    <string name="title_activity_feed_back">FeedBackActivity</string>
+    <string name="title_activity_host_play">HostPlayActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_recorder">RecorderActivity</string>
+    <string name="load_error">加载失败</string>
+
+
+    <string name="letv_network_message">(>﹏&lt;)当前网络处于非wifi状态，请检查网络</string>
+    <string name="letv_notice_message">(>﹏&lt;)播放失败了，重新播放一下试试？</string>
+
+    <string name="home_title">播放SDK</string>
+    <string name="vod_hasSkin">点播播放器（有皮肤）</string>
+    <string name="vod_noSkin">点播播放器（无皮肤）</string>
+    <string name="live_hasSkin">直播播放器（有皮肤）</string>
+    <string name="live_noSkin">直播播放器（无皮肤）</string>
+    <string name="active_player_hasSkin">活动播放器（有皮肤）</string>
+    <string name="active_player_noSkin">活动播放器（无皮肤）</string>
+    <string name="mobile_player_hasSkin">移动直播播放器（有皮肤）</string>
+    <string name="mobile_player_noSkin">移动直播播放器（无皮肤）</string>
+    <string name="other">其他</string>
+    <string name="description">说明</string>
+    <string name="versionCode">版本号:2.3.5</string>
+    <string name="liveId">liveId</string>
+    <string name="streamId">streamId</string>
+    <string name="play_Path">播放地址</string>
+    <string name="domain">播放地址:</string>
+    <string name="start_live">直播</string>
+    <string name="start_vod">点播</string>
+    <string name="rtmp">支持rtmp</string>
+    <string name="hls">支持hls</string>
+    <string name="playId">播放ID</string>
+    <string name="uuid">UUid:</string>
+    <string name="vuid">VUid:</string>
+    <string name="activeId">活动ID:</string>
+    <string name="active_live">活动直播</string>
+    <string name="pop_test">广告测试</string>
+    <string name="video_list">列表视频展示</string>
+    <string name="two_player">启动双播放器</string>
+    <string name="download_list">查看下载列表</string>
+    <string name="live_ID">直播ID:</string>
+    <string name="title_activity_see_play">SeePlayActivity</string>
+    <string name="title_activity_play_no_skin">PlayNoSkinActivity</string>
+    <string name="title_activity_live_class_play">LiveClassPlayActivity</string>
+
+    <string name="input_pwd">请输入观看口令</string>
+    <string name="tip">温馨提示</string>
+    <string name="title_activity_theme_basketball">ThemeBasketballActivity</string>
+
+    <string name="title_activity_authenticate">AuthenticateActivity</string>
+
+    <string name="charity_details_content">     关于此次活动，圆梦联盟表示在学习之余举办公益活动，不仅除了培养同学们的敬业精神更是培养我们的感恩，敬老，大爱的品德，做事做人的高品德情操。带领社团成员看望敬老院老人、陪老人唠家常、打扫卫生、包饺子陪伴老人……\n\n“老人在晚年需要的是陪伴，我们在此送上自己的微薄之力，同时也让所有同学能够更好的孝敬父母，时刻怀着感恩博爱之心，”圆梦联盟负责人说到。</string>
+    <string name="title_activity_class1">Class1Activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

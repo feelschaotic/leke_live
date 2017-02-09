@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/gift_heart_1"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_2"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_3"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_4"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_5"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_6"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_7"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_8"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_9"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_10"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_10"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_12"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_13"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_14"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_15"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_16"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_17"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_18"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_19"
+        android:duration="75" />
+    <item
+        android:drawable="@drawable/gift_heart_20"
+        android:duration="75" />
+
+</animation-list>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <!-- <RelativeLayout
+        android:id="@+id/id_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:id="@+id/question_user_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/xiao"
+            android:layout_alignBottom="@+id/question_user_name" />
+        <TextView
+            android:id="@+id/question_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="追逐者"
+
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/question_user_head"
+            android:layout_toEndOf="@+id/question_user_head" />
+        <TextView
+            android:id="@+id/question_time"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="2016-04-15"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:text="只要存在计算机,总会遇到计算机崩溃现象,蓝屏、死机以及令人费解的窗口警告等。你可能无法抑制住自己的焦虑,不断试图点击鼠标。科技媒体TechRepubli..."
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/question_user_head"
+            android:layout_marginTop="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+-->
+    <ListView
+        android:id="@id/android:list"
+        android:layout_below="@+id/id_question"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></ListView>
+
+  <!--  <LinearLayout
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <EditText
+            android:id="@+id/question_user_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="请输入你的回复内容"
+            android:textColor="#66000000"
+            android:textSize="16sp"
+            />
+        <ImageButton
+            android:id="@+id/btn_question_into"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/left_nav_menu_send_btn_normal"
+            android:layout_marginRight="10sp"/>
+    </LinearLayout>
+-->
+
+
+</RelativeLayout>

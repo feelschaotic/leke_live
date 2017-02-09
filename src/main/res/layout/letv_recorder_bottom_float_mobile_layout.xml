@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp">
+
+<!--    <ImageView
+        android:id="@+id/imgV_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        android:src="@drawable/letv_recorder_set" />
+-->
+  <!--  <TextView
+        android:id="@+id/tv_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/letv_recorder_rate_button"
+        android:gravity="center"
+        android:text="画中画"
+        android:textColor="#ffffffff" />-->
+
+    <ImageView
+        android:id="@+id/imgV_flashlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="110dp"
+        android:src="@drawable/letv_recorder_flash_light_close" />
+
+    <!--   <ImageView
+           android:id="@+id/imgV_voice"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="27dp"
+           android:layout_toRightOf="@id/imgV_flashlight"
+           android:src="@drawable/letv_recorder_voise_open" />-->
+
+    <ImageView
+        android:id="@+id/imgV_postposition_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/imgV_flashlight"
+        android:src="@drawable/letv_recorder_postposition_camera" />
+
+    <include layout="@layout/letv_my_defined_layout" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/live_prove_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+    ><!-- android:layout_marginBottom="20dp"-->
+
+    <TextView
+        style="@style/whiteTv"
+        android:id="@+id/school_name_tv"
+        android:layout_gravity="center_horizontal"
+        android:text="选择学校"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/abc_spinner_mtrl_am_alpha" />
+
+
+</LinearLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleImageView2="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cpb_grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/translucentBlack"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/screening" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/down_triangle" />
+
+            <TextView
+                style="@style/balance_time_line_medium_text"
+                android:text="周边" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_ic_search_api_mtrl_alpha" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:layoutAnimation="@anim/love_wall_layout_animation"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="校园直播表白墙"
+            android:textColor="#222"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="如果你有话不敢对她说，那就写在这里吧"
+            android:textColor="#666"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.ramo.campuslive.view.ImageSlidePanel
+            android:id="@+id/image_slide_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout style="@style/love_wall_ll">
+
+                <TextView
+                    style="@style/main_whiteTv_normal_small"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/school_shape_blue"
+                    android:drawableLeft="@drawable/school_white"
+                    android:padding="2dp"
+                    android:text=" 工业大学" />
+
+                <com.ramo.campuslive.view.AntiAliasTextView style="@style/love_wall_anti_tv" />
+
+                <LinearLayout style="@style/love_wall_ll2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="测试文字" />
+
+                    <com.ramo.campuslive.view.CircleImageView2 style="@style/love_wall_user_head" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/love_wall_ll">
+
+                <TextView
+                    style="@style/main_whiteTv_normal_small"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/school_shape_grey"
+                    android:drawableLeft="@drawable/school_white"
+                    android:padding="2dp"
+                    android:text=" 华农大学" />
+
+                <com.ramo.campuslive.view.AntiAliasTextView style="@style/love_wall_anti_tv" />
+
+                <LinearLayout style="@style/love_wall_ll2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="测试文字" />
+
+                    <com.ramo.campuslive.view.CircleImageView2 style="@style/love_wall_user_head" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/love_wall_ll">
+
+                <TextView
+                    style="@style/main_whiteTv_normal_small"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/school_shape_green"
+                    android:drawableLeft="@drawable/school_white"
+                    android:padding="2dp"
+                    android:text=" 广贸学院" />
+
+                <com.ramo.campuslive.view.AntiAliasTextView style="@style/love_wall_anti_tv" />
+
+
+                <LinearLayout style="@style/love_wall_ll2">
+
+                    <com.ramo.campuslive.view.CircleImageView2 style="@style/love_wall_user_head" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="测试" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/love_wall_ll">
+
+                <TextView
+                    style="@style/main_whiteTv_normal_small"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/school_shape_orange"
+                    android:drawableLeft="@drawable/school_white"
+                    android:padding="2dp"
+                    android:text=" 中山大学" />
+
+                <com.ramo.campuslive.view.AntiAliasTextView
+                    style="@style/love_wall_anti_tv"
+                    android:background="@drawable/love_wall_bg2" />
+
+                <LinearLayout style="@style/love_wall_ll2">
+
+                    <com.ramo.campuslive.view.CircleImageView2
+                        style="@style/love_wall_user_head"
+                        CircleImageView2:border_color="@android:color/white"
+                        CircleImageView2:border_width="1dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="表白墙直播,等你答复！" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.ramo.campuslive.view.ImageSlidePanel>
+
+        <View
+            android:id="@+id/left_shake"
+            android:layout_width="15dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/left"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/right_shake"
+            android:layout_width="15dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/bottom_shake"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/up"
+            android:visibility="invisible" />
+
+        <!-- 左边的点击区域 -->
+
+        <View
+            android:id="@+id/left_click_area"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+
+        <!-- 右边的点击区域 -->
+
+        <View
+            android:id="@+id/right_click_area"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/swipe"
+    android:layout_height="300dp"
+    app:clickToClose="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/trash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF3B30"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:src="@drawable/trash" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/attention_item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/demo">
+
+        <ImageView
+            android:id="@+id/attention_live_state_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/live_state_live" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/translucentBlack"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp">
+
+            <com.ramo.campuslive.view.CircleImageView2
+                android:id="@+id/attention_live_userHead"
+                app:border_color="@color/white"
+                app:border_width="1dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/head" />
+
+            <TextView
+                android:id="@+id/attention_live_name"
+                style="@style/mmbig_text"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/attention_live_userHead"
+                android:singleLine="true"
+                android:text="江湖感觉乱的直播间" />
+
+            <View
+                android:id="@+id/attention_hr"
+                style="@style/coarse_hr_hor"
+                android:layout_below="@+id/attention_live_name"
+                android:layout_toEndOf="@+id/attention_live_userHead" />
+
+            <TextView
+                android:id="@+id/attention_live_userName"
+                style="@style/balance_time_line_small_text"
+                android:layout_below="@+id/attention_hr"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/attention_live_userHead"
+                android:text="用户名" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/attention_live_likeNum"
+                android:src="@drawable/special_xin" />
+
+            <TextView
+                android:id="@+id/attention_live_likeNum"
+                style="@style/balance_time_line_medium_text"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:text="13" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>

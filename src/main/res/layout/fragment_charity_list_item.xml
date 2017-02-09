@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow"
+    android:layout_marginBottom="15dp">
+
+    <ImageView
+        android:id="@+id/charity_cover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/charity1" />
+
+    <TextView
+        style="@style/main_whiteTv_normal_small"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/school_shape_orange"
+        android:drawableLeft="@drawable/school_white"
+        android:padding="3dp"
+        android:id="@+id/charity_schoolName"
+        android:text=" 中山大学" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/charity_cover"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        <LinearLayout style="@style/charity_list_item_ll">
+
+            <TextView
+                style="@style/balance_time_line_small_text_black"
+                android:text="关注" />
+
+            <TextView
+                android:id="@+id/charity_attentionNum"
+                style="@style/balance_time_line_medium_text_orange"
+                android:text="11" />
+        </LinearLayout>
+
+        <View style="@style/leftNavHrVertical" />
+
+        <LinearLayout style="@style/charity_list_item_ll">
+
+            <TextView
+                style="@style/balance_time_line_small_text_black"
+                android:text="分享" />
+
+            <TextView
+                android:id="@+id/charity_shareNum"
+                style="@style/balance_time_line_medium_text_orange"
+                android:text="13" />
+        </LinearLayout>
+
+        <View style="@style/leftNavHrVertical" />
+
+        <LinearLayout style="@style/charity_list_item_ll">
+
+            <TextView
+                style="@style/balance_time_line_small_text_black"
+                android:text="社团" />
+
+            <TextView
+                android:id="@+id/charity_communityName"
+                style="@style/balance_time_line_medium_text_orange"
+                android:text="圆梦联盟" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

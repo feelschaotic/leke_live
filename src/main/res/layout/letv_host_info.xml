@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleImageView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="7dp"
+    android:background="@drawable/letv_host_info_linearlayout_shape_black"
+    android:orientation="horizontal">
+
+    <com.ramo.campuslive.view.CircleImageView2
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/head2"
+        CircleImageView:border_color="@color/white"
+        CircleImageView:border_width="1.5dp" />
+
+    <include layout="@layout/activity_personal_center_user_info_name_and_level" />
+</LinearLayout>

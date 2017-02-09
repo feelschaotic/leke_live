@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleImageView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/my_guessimg_img"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/demo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-38dp"
+            android:gravity="top|right">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/my_guessimg_joinNum"
+                style="@style/whiteTv"
+                android:singleLine="true"
+                android:text="12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/time" />
+
+            <TextView
+                android:id="@+id/my_guessimg_time"
+                style="@style/whiteTv"
+                android:singleLine="true"
+                android:text="2015-5-12 12:00:00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-35dp"
+            android:layout_weight="0.2">
+
+            <com.ramo.campuslive.view.CircleImageView2
+                android:id="@+id/report_user_userhead"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/head"
+                CircleImageView:border_color="@color/white"
+                CircleImageView:border_width="1dp" />
+
+            <TextView
+                android:id="@+id/report_user_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:text="江湖感觉乱 发起"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/my_guessimg_title"
+            style="@style/balance_time_line_big_text_black"
+            android:layout_gravity="center_horizontal"
+            android:text="qqq" />
+
+        <GridView
+            android:id="@+id/my_guess_gv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:columnWidth="150dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="auto_fit"
+            android:padding="5dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+
+
+        <TextView
+            android:id="@+id/my_guess_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:text="state" />
+    </LinearLayout>
+
+
+</LinearLayout>

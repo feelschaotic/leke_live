@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_create_theme">
+
+    <LinearLayout
+        android:id="@+id/live_permissions_doubleLive_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/balance_time_line_medium_text"
+            android:layout_marginTop="15dp"
+            android:text="邀请主播加入" />
+
+        <GridView
+            android:id="@+id/live_theme_head_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="8dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/whiteTv"
+                android:text="换一批" />
+
+            <ImageView
+                android:id="@+id/begin_live_exchange_permissions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/begin_live_exchange_permissions_bg" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

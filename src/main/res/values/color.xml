@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_color">#bf360c</color>
+    <color name="drawer_arrow_second_color">#303f9f</color>
+
+    <color name="register_hint" >#CCCCCC</color>
+    <color name="register_head_write" >#FFFFFF</color>
+
+    <color name="textColor" >#FFFFFF</color>
+    <color name="half_translucentWhite" >#5eFFFFFF</color>
+    <color name="translucentWhite" >#8eFFFFFF</color>
+    <color name="ttranslucentWhite" >#9eFFFFFF</color>
+    <color name="tttranslucentWhite" >#eFFFFFFF</color>
+    <color name="translucentBlack" >#9e000000</color>
+    <color name="ttranslucentBlack" >#80000000</color>
+    <color name="tttranslucentBlack" >#ee000000</color>
+    <color name="half_translucentBlack" >#5e000000</color>
+
+    <color name="live_tag" >#5BC4ED</color>
+
+    <color name="letv_recorder_text_color">#ffffff</color>
+    <color name="letv_recorder_text_blue_color">#1073C2</color>
+    <color name="letv_recorder_background_gray">#70000000</color>
+    <color name="letv_recorder_fade_background">#50BA68C8</color>
+    <color name="letv_recorder_dialog_button_background">#1074C2</color>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="btn_stroke">#746C77</color>
+    <color name="btn_selected">#DDDDDD</color>
+    <color name="black">#000000</color>
+    <color name="trans">#99746C77</color>
+    <color name="blue">#6A42EC</color>
+    <color name="blue_tran">#CC6A42EC</color>
+
+    <color name="letv_color_b3000000">#b3000000</color>
+    <color name="letv_color_ffffffff">#ffffffff</color>
+    <color name="letv_color_fff6f6f6">#fff6f6f6</color>
+    <color name="letv_color_ff00a0e9">#ff00a0e9</color>
+    <color name="download_btn_normal">#cc000000</color>
+    <color name="download_btn_pressed">#e5198fdd</color>
+    <color name="download_btn_enable">#e57d7d7d</color>
+    <!-- 这个是活动中的颜色样式 -->
+    <color name="action_mult_live_shape">#ff1073BF</color>
+    <color name="letv_skin_vnew_controller_background">#c0000000</color>
+
+</resources>

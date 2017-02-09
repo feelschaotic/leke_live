@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/live_permissions_pw_input_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:visibility="gone"
+    android:layout_marginRight="40dp"
+    android:background="@drawable/personal_gift_shape"
+    android:orientation="horizontal"
+    tools:showIn="@layout/parent_live_permissions">
+
+    <EditText
+        android:id="@+id/live_permissions_tv_pass1"
+        style="@style/live_permissions_pw_tv" />
+
+    <View style="@style/live_permissions_pw_hr" />
+
+    <EditText
+        android:id="@+id/live_permissions_tv_pass2"
+        style="@style/live_permissions_pw_tv" />
+
+    <View style="@style/live_permissions_pw_hr" />
+
+    <EditText
+        android:id="@+id/live_permissions_tv_pass3"
+        style="@style/live_permissions_pw_tv" />
+
+    <View style="@style/live_permissions_pw_hr" />
+
+    <EditText
+        android:id="@+id/live_permissions_tv_pass4"
+        style="@style/live_permissions_pw_tv" />
+</LinearLayout>

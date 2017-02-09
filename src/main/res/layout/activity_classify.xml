@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/topbar"
+        android:background="@color/orange">
+
+        <ImageView style="@style/topbar_back" />
+
+        <TextView
+            style="@style/topbar_text"
+            android:text="分类直播" />
+    </RelativeLayout>
+
+    <com.ramo.campuslive.view.ViewPagerIndicator
+        android:id="@+id/classifyViewPagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/black" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/classifyViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

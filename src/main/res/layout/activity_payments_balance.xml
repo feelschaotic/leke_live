@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/bgStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/topbar">
+
+        <ImageView style="@style/topbar_back" />
+
+        <TextView
+            style="@style/topbar_text"
+            android:text="财富" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="@string/balance_have_money"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/balance_have_money_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="2"
+            android:textColor="@android:color/white" />
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/top_up_btn"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:textColor="@color/cpb_white"
+            app:cpb_cornerRadius="28dp"
+            app:cpb_textComplete="充值成功"
+            app:cpb_textError="充值失败"
+            app:cpb_textIdle="充值" />
+    </LinearLayout>
+
+    <View style="@style/coarse_hr_hor"></View>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/balance_time_line_time" />
+
+    <ListView
+        android:id="@+id/balance_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"></ListView>
+</LinearLayout>

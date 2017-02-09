@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_begin_live_setting">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/launch_map_on" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/whiteTv"
+            android:text="张家界" />
+
+        <View style="@style/BeginLiveHrVertical" />
+
+        <ImageView
+            android:id="@+id/begin_live_permissions_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/launch_lock_on" />
+
+        <TextView
+            android:id="@+id/begin_live_permissions_tv"
+            style="@style/whiteTv"
+            android:text="公开" />
+
+        <ImageView
+            android:id="@+id/begin_live_exchange_permissions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/begin_live_exchange_permissions_bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/live_permissions_group_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/whiteTv"
+            android:layout_gravity="center_horizontal"
+            android:text="选择社团"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_spinner_mtrl_am_alpha" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/live_permissions_pw_input_tv"
+        style="@style/whiteTv"
+        android:layout_gravity="center_horizontal"
+        android:text="请输入视频密钥"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone" />
+
+    <include layout="@layout/live_permession_pwd" />
+
+    <LinearLayout
+        android:id="@+id/live_permissions_money_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/whiteTv"
+            android:text="付费："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/tv_money"
+            style="@style/balance_time_line_big_text"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_shape"
+            android:inputType="number"
+            android:maxWidth="100dp"
+            android:text="1" />
+
+        <TextView
+            style="@style/whiteTv"
+            android:text="元"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/live_permissions_doubleLive_view_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/whiteTv"
+            android:text="我的观点:    "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            style="@style/balance_time_line_big_text"
+            android:background="@drawable/btn_shape"
+            android:maxWidth="220dp"
+            android:minWidth="100dp"
+            android:text="" />
+    </LinearLayout>
+
+    <include layout="@layout/invite_host_layout" />
+
+    <View
+        style="@style/coarse_hr_hor"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp" />
+</merge>

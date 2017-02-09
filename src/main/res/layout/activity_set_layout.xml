@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bgStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/topbar">
+        <ImageView
+            style="@style/topbar_back" />
+        <TextView
+            android:text="设置"
+            style="@style/topbar_text"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/other_set_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:scrollbars="none"
+        android:background="@drawable/linearlayout_shape"
+        android:divider="#999999"
+        android:dividerHeight="0.5dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"/>
+
+</LinearLayout>

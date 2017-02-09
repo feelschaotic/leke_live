@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/live_type_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:layout_marginBottom="20dp">
+
+    <TextView
+        android:id="@+id/id_typename_tv"
+        style="@style/whiteTv"
+        android:layout_gravity="center_horizontal"
+        android:text="选择类别"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/abc_spinner_mtrl_am_alpha" />
+
+</LinearLayout>

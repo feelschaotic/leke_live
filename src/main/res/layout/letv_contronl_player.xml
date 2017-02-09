@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/control_player"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+        <!--android:background="@drawable/bg_player_bottom_seekbar"-->
+        <!-- <TextView
+             android:id="@+id/tv_current_time"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="5dp"
+             android:text="当前时间"
+             android:textColor="#ffffff"/>-->
+        <SeekBar
+            android:id="@+id/sb_video_seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:maxHeight="10dp"
+            android:minHeight="10dp"
+            android:progress="20"
+            android:thumb="@drawable/progress_thumb"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="center"
+        android:background="#7e000000"
+        android:orientation="horizontal">
+        <!--android:background="@drawable/progress_secondaryprogress"-->
+
+        <Button
+            android:id="@+id/btn_swich"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:background="@drawable/ic_widget_search_voice" />
+
+        <EditText
+            android:id="@+id/dan_text"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/input_shape"
+            android:hint="请输入弹幕内容"
+            android:imeOptions="flagNoExtractUi"
+            android:paddingLeft="5dp"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/add_dang"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/left_nav_menu_send_btn_selector" />
+        <!--
+         android:text="发送"
+            android:textSize="16dp"
+            android:textColor="@color/white"android:background="#6e000000"-->
+
+        <Button
+            android:id="@+id/btn_dang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dang_off" />
+
+        <Button
+            android:id="@+id/btn_seter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/myyouku_setting" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

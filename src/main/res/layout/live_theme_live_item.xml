@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingBottom="15dp"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/theme_name"
+    style="@style/balance_time_line_big_text_grey"
+    android:layout_gravity="center_vertical"
+    android:text="视角二" />
+<CheckBox
+    android:layout_marginLeft="10dp"
+    android:layout_gravity="center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+</CheckBox>
+</LinearLayout>

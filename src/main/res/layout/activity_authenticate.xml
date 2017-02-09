@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bgStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/topbar">
+        <ImageView style="@style/topbar_back" />
+        <TextView
+            style="@style/topbar_text"
+            android:text="公益认证" />
+        <TextView
+            android:id="@+id/tv_apply_societies"
+            style="@style/whiteTv"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/apply_submit" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <EditText
+                android:id="@+id/societies_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_shape"
+                android:hint="公益社团名"
+                android:textColorHint="@color/register_hint"
+                android:textColor="@color/tttranslucentWhite"
+                android:textSize="15sp"></EditText>
+            <EditText
+                android:id="@+id/societies_fu_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_shape"
+                android:hint="负责人姓名"
+                android:textColorHint="@color/register_hint"
+                android:textColor="@color/tttranslucentWhite"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/societies_fu_cal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_shape"
+                android:hint="负责人联系电话"
+                android:textColorHint="@color/register_hint"
+                android:textColor="@color/tttranslucentWhite"
+                android:textSize="15sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学校备案证明"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/apply_welfare_school_iv"
+                    style="@style/apply_host_upload_img"
+                    android:src="@drawable/upload_pictures_plus" />
+                <TextView
+                    style="@style/apply_host_hint_text"
+                    android:text="学校备案证明，请拍照上传，内容包含该社团名称，介绍以及学校公章" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="负责社团教师证"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/apply_welfare_theach_iv"
+                    style="@style/apply_host_upload_img"
+                    android:src="@drawable/upload_pictures_plus" />
+            </LinearLayout>
+
+          <!--  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apply_host_cover"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/apply_host_upload_cover_iv"
+                    style="@style/apply_host_upload_img"
+                    android:src="@drawable/upload_pictures_plus" />
+            </LinearLayout>-->
+            <EditText
+                android:id="@+id/societies_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:minLines="2"
+                android:maxLines="6"
+                android:background="@drawable/text_shape"
+                android:hint="社团介绍"
+                android:textColorHint="@color/register_hint"
+                android:textColor="@color/tttranslucentWhite"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_marginBottom="20dp"
+                style="@style/apply_host_hint_text"
+                android:text="注：以上信息仅用于对社团进行资格认证和教师实名认证，本平台不会向第三方泄露主播身份信息或用于其他用途" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

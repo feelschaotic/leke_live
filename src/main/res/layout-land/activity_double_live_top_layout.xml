@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleImageView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="60dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/linearlayout_shape"
+    android:padding="5dp"
+    tools:showIn="@layout/activity_double_live">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/double_live_icon_pk" />
+
+    <com.ramo.campuslive.view.CircleImageView2
+        android:id="@+id/double_live_userHead1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/head"
+        CircleImageView:border_color="@color/orange"
+        CircleImageView:border_width="0.7dp" />
+
+    <TextView
+        android:id="@+id/double_live_userName1"
+        style="@style/double_live_medium_text1"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/double_live_userHead1"
+        android:text="ramo" />
+
+    <com.ramo.campuslive.view.CircleImageView2
+        android:id="@+id/double_live_userHead2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/head2"
+        CircleImageView:border_color="@android:color/holo_blue_dark"
+        CircleImageView:border_width="0.7dp" />
+
+    <TextView
+        android:id="@+id/double_live_userName2"
+        style="@style/double_live_medium_text2"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/double_live_userHead2"
+        android:text="乱" />
+
+
+    <TextView
+        android:id="@+id/double_live_title"
+        style="@style/balance_time_line_big_text"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="该不该实行手机号实名制？" />
+</RelativeLayout>
