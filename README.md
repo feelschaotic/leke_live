@@ -13,4 +13,9 @@
 &#160;&#160;&#160;&#160;在移动端用户可以 一键收藏分享、申请主播，审核通过后开启直播，个人中心，我的竞猜，财富中心、设置、登录/注册、观看分类直播，观看过程中可进行语音弹幕、点赞 、送礼、私信、竞猜等互动。
 
 >Android端涉及技术点：LBS云图、Android Annotation、b站烈焰弹幕使、科大讯飞语音识别、Unity 3D、openGL。  
-注：直播推流服务器采用乐视云服务器
+注：直播推流服务器采用乐视云服务器  
+
+![](https://github.com/feelschaotic/leke_live/blob/master/video/v1.gif)  
+![](https://github.com/feelschaotic/leke_live/blob/master/video/v2.gif)  
+![](https://github.com/feelschaotic/leke_live/blob/master/video/v3_begin_live.gif)  
+![](https://github.com/feelschaotic/leke_live/blob/master/video/v4_ar.gif)
